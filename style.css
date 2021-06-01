@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main page css */
+.start a{
+    text-align: relative;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    text-decoration: none;
+    font-size: 3rem;
+    border: 2px solid rgb(0, 23, 233);
+    padding: 0.1em 0.7em;
+    background-color: rgb(47, 156, 245);
+    color: black;
+    border-radius: 1ex;
+}
+.start a:hover {
+    box-shadow: inset 0 0 1em rgb(101, 238, 238);
+    position: fixed;
+    top: 50.3%;
+    left: 45.3%;
+}
+/* end of main page css */
+
+/* front page*/
+.header {
+    background-image: url("image/tech_cool.gif");
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+nav a:hover {
+    font-size: large;
+    color: red;
+}
+p {
+    color: #555;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1 {
+    color: rgb(238, 64, 64);
+    font-size: 4em;
+    margin: 25px;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/*search bar*/
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 45px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+    background: white;
+}
+.search-btn{
+    position: relative;
+    color: #e84118;
+    float: right;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30%;
+    transition: 0.4s;
+}
+.search-txt {
+    border: none;
+    background-color: #2f3640;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+
+    width: 0px;
+    /*width: 240px;*/
+}
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+#myUL li a {
+    border: 1px solid #2f3640;
+    border-radius: 0.3em;
+    margin-top: 1px;
+    background-color: #2f3640;
+    padding: 12px;
+    top: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+#myUL li a:hover:not(.header) {
+    background-color: rgb(85, 85, 85);
+}
+.search-box:hover > .list-container{
+    width: 100%;
+    height: 550%;
+    overflow: auto;
+}
+.list-container {
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+}
+/*end of search bar*/
+
+
+/* end of front page*/
+
+
+/*start of products page*/
+.box {
+    display: block;
+    height: auto;
+    padding: 4%;
+    font-size: 2.5em;
+    margin: 4%;
+    position: relative;
+}
+.choice {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    margin: 2%;
+    padding: 9%;
+}
+.choice:hover {
+    box-shadow: inset 0 0 1em rgb(101, 238, 238);
+}
+/*end of products page*/
+
+/* mac page*/
+.container p a:hover{
+    color:red;
+    font-size: 1.1em;
+}
+.small-container {
+    max-width: 1080px;
+    margin: 0;
+    padding: 0;
+}
+.choice-2 {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    margin: 2%;
+    padding: 10%;
+}
+.choice-2:hover{
+    box-shadow: inset 0 0 0.5em rgb(101, 238, 238);
+}    
+.small-container .title {
+    position: relative;
+    left: 5%;
+    font-size: 85%;
+    float: center;
+}
+.col-3 img{
+    max-width: 35%;
+    max-height: 35%;
+    position: relative;
+    align-items: center;
+    float: left;
+    top: 10%;
+    bottom: 20px;
+    right: 10%;
+}
+.text{
+    display:flex;
+}
+.color-choice{
+    position: relative;
+    left: 2%;
+    padding: 3%;
+    margin: 2%;
+    font-size: 120%;
+}
+.buy-choice {
+    position: relative;
+    float: left;
+    left: 10%;
+    margin: 5%;
+    font-size: 120%;
+}
+.buy-choice p a:hover {
+    color: red;
+    font-size: medium;
+}
+.title a:hover{
+    color: rgb(221, 57, 57);
+    font-size: 1.01em;    
+}
+/*end of mac page*/
+
+
+/*about page*/
+.about-title{
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+}
+.about-page p {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*end of about page*/
